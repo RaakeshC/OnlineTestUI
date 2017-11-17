@@ -1,0 +1,77 @@
+[0307/101933:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0307/101933:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0307/130828:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0307/130828:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0307/135824:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0307/135824:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0307/184332:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0307/184332:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0308/150818:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0308/150818:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0309/093143:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0309/093143:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0310/093626:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0310/093626:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0311/092311:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0311/092311:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0314/095330:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0314/095330:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0314/143507:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0314/143507:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0315/093720:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0315/093720:ERROR:node_debugger.cc(86)] Cannot start debugger server
+
+[0315/110605:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0315/110605:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0315/110640:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0315/110640:ERROR:node_debugger.cc(86)] Cannot start debugger server
+
+[0315/120650:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0315/120650:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0315/163750:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0315/163750:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0316/093722:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0316/093722:ERROR:node_debugger.cc(86)] Cannot start debugger server
+
+[0316/152221:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0316/152221:ERROR:node_debugger.cc(86)] Cannot start debugger server
+
+[0316/152934:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0316/152934:ERROR:node_debugger.cc(86)] Cannot start debugger server
+
+[0317/110503:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0317/110503:ERROR:node_debugger.cc(86)] Cannot start debugger server[0317/174526:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0317/174526:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0317/181822:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0317/181822:ERROR:node_debugger.cc(86)] Cannot start debugger server
+[0318/102320:ERROR:tcp_listen_socket.cc(76)] Could not bind socket to 127.0.0.1:6004
+[0318/102320:ERROR:node_debugger.cc(86)] Cannot start debugger server
+<<<<<<< HEAD
+[0516/103810.142:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0516/141119.178:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0516/145715.424:ERROR:process_info.cc(625)] range at 0x673a2b7800000000, size 0x233 fully unreadable
+[0516/145715.426:ERROR:process_info.cc(625)] range at 0x24b529d600000000, size 0x1cf fully unreadable
+[0516/145715.429:ERROR:process_info.cc(625)] range at 0x673a2be000000000, size 0x233 fully unreadable
+[0516/145715.431:ERROR:process_info.cc(625)] range at 0x24b529f600000000, size 0x1cf fully unreadable
+[0516/145715.432:ERROR:process_info.cc(625)] range at 0x0, size 0x233 fully unreadable
+[0516/145715.433:ERROR:process_info.cc(625)] range at 0x24b529f800000000, size 0x1cf fully unreadable
+[0516/145715.435:ERROR:process_info.cc(625)] range at 0x9747333e00000000, size 0x1f0 fully unreadable
+[0516/145715.449:ERROR:process_info.cc(625)] range at 0x974733a600000000, size 0x1f0 fully unreadable
+[0516/145715.462:ERROR:process_info.cc(625)] range at 0x0, size 0x1f0 fully unreadable
+=======
+[0516/120801.712:ERROR:process_info.cc(625)] range at 0x287c32f400000000, size 0x1b6 fully unreadable
+[0516/120801.731:ERROR:process_info.cc(625)] range at 0x287c335c00000000, size 0x1b6 fully unreadable
+[0516/120801.731:ERROR:process_info.cc(625)] range at 0x0, size 0x1b6 fully unreadable
+[0516/120801.743:ERROR:file_io_win.cc(145)] CreateFile C:\Users\Piyushap\AppData\Local\Temp\11\testem-279\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0516/120801.743:ERROR:file_io_win.cc(154)] CreateFile C:\Users\Piyushap\AppData\Local\Temp\11\testem-279\Crashpad\reports\773cedc6-235c-41d8-8825-1630a7f67015.dmp: The system cannot find the path specified. (0x3)
+[0516/120801.743:ERROR:crash_report_exception_handler.cc(95)] PrepareNewCrashReport failed
+>>>>>>> 09e09dc5be09c76930d44aecb00231fb056ff402
+[0520/124411.876:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0522/160314.695:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+<<<<<<< HEAD
+[0523/110325.039:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+=======
+[0523/122231.232:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0523/143925.443:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+[0524/123035.371:ERROR:prune_crash_reports.cc(35)] PruneCrashReportDatabase: Failed to get pending reports
+>>>>>>> cc73e8ccb4cc889ec667205289c646926916fffa

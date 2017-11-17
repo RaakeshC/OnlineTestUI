@@ -1,0 +1,57 @@
+{{outlet}}
+<br>
+<br>
+<br>
+<div class="col-sm-12">
+             {{!-- {{my-component model=model }} --}}
+<br><br>{{models-table data=message columns=columns action = clickrows}}<br>
+
+{{!-- {{model}} --}}
+<h4>To Add Question</h4>
+<br>
+ 
+<div class="text-box" style = "margin-left: 90px;">
+   <div class ="error">
+     {{textarea value=name type="text" id="question" model=this valuePath='question' placeholder='Question' cols="80" rows="6"}}
+     </div>
+</div>
+<br>
+     <div class="col-sm-6">
+       <div class="text-box" id="optioncss">
+         <div class ="error" >
+           {{validated-input type="text" id="option1" model=this valuePath='option1' placeholder='Option 1'}}
+           </div>
+        </div>
+        <div class="text-box" id="optioncss">
+         <div class ="error">
+           {{validated-input type="text" id="option2" model=this valuePath='option2' placeholder='Option 2'}}
+           </div>
+        </div>
+        <div class="text-box" id="optioncss">
+         <div class ="error">
+           {{validated-input type="text" id="option3" model=this valuePath='option3' placeholder='Option 3'}}
+           </div>
+        </div>
+        <div class="text-box" id="optioncss">
+         <div class ="error">
+           {{validated-input type="text" id="option4" model=this valuePath='option4' placeholder='Option 4'}}
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="text-box" id="optioncss">
+          <div class ="error">
+             {{validated-input type="text" id="answer" model=this valuePath='answers' placeholder='answer'}}
+          </div>
+        </div>
+        <br> {{select-component dropdowntype="test" listitem=testlist selecteditemlist=selectedtest}}
+
+      </div>
+        <button type="button"  class="btn btn-success" style ="margin-right: 575px" {{action 'questionlist'}} >Add Question</button>
+        <button type="button"  class="btn btn-success" style ="margin-right: 575px">Delete</button>
+        <button type="button"  class="btn btn-success" style ="margin-right: 575px">update</button>
+
+
+<br>
+<br>
+</div>

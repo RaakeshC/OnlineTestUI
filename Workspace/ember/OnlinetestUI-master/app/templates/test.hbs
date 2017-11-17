@@ -1,0 +1,55 @@
+<div class="home-background">  
+<br>
+<div class="form-group-test">
+
+    <div>
+        {{token}}
+        <br>
+        <h1 class="text-color" style = "margin-top: 60px">Choose Your Test..!!</h1><br><br>
+        <!--drop down component to select test type-->
+        <br> {{select-component dropdowntype="test" listitem=testlist selecteditemlist=selectedtest}}
+        <span class="errmsgT">{{errorMessage}}</span>
+    </div>
+<div class="icon_container">
+   <div class="row">
+      <div class="col-sm-4">
+          <div class="container_card">
+             <div class="card">
+                    <h3 class="heading" style="color: darkviolet">Fundamental</h3>
+                    <img src="assets/images/c.png" style="height: 60%; width: 40%">
+              </div>
+          </div>
+      </div>
+    <div class="col-sm-4">
+         <div class="container_card">
+             <div class="card">
+                    <h3 class="heading" style="color: darkviolet">Java</h3>
+                    <img src="assets/images/java.png" style="height: 60%; width: 40%">
+              </div>
+          </div>
+    </div>
+    <div class="col-sm-4">
+         <div class="container_card">
+             <div class="card" >
+                    <h3 class="heading" style="color: darkviolet">English</h3>
+                  <img src="assets/images/english.png" style="height: 60%; width: 40%">
+              </div>
+          </div>
+    </div>
+ </div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="button" id ="starttest" class="btn btn-success" {{action 'questionlist'}}>Start Test</button>
+
+
+</div>
+</div>
+ <div class = "logoutT">
+<button type="button" class="btn btn-default btn-sm,nav navbar-nav navbar-right"{{action "log_out1"}}>
+          <span class="glyphicon glyphicon-log-out"></span> Log out</button>
+ </div>
+
+ 

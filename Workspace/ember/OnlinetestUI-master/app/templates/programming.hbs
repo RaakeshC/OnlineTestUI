@@ -1,0 +1,77 @@
+<!--this is programming page to show question to users-->
+<script>
+    $(document).ready(function() {
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.go-top').fadeIn(200);
+            } else {
+                $('.go-top').fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $('.go-top').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 300);
+        })
+    });
+</script>
+<br>
+<br>
+<div class="text-color">
+    <div class="home-box-body1 ">
+    <div class="align-q">
+        <div class="test-head">
+            <h3>Please Start With {{testType}} Test..!!</h3>
+       </div>
+       <!-- loop to show multiple questions the-->
+        <br>{{#each model.message as |item|}} {{question-comp Ques=item}}
+
+        <br> {{/each}}
+    
+    </div> 
+    </div>
+  
+    <br>
+    <div class="btn-calscore">
+        {{total}}
+        <button type="button" id="calculatescore" class="btn btn-success" {{action "toggleModal"}}>Calculate Score</button>
+    </div>
+    <a href="#" class="go-top">Scroll to Top</a> 
+    <!-- this is pop up modal to show scre after test-->
+    {{#if isShowingModal}} {{#modal-dialog targetAttachment="center" translucentOverlay=true}}
+    <div>
+        
+        congratulations..!!
+        <br> Your {{testType}} Score Is   <br>
+        <div class="score">
+           {{#if toShowCalculating}}
+            Calculating...
+            {{else}}
+            {{score}}/{{totalQuestions}}            
+            {{/if}}
+           </div>
+        <br>
+    </div>
+<!--<button type="button" class="btn btn-success" {{action "toggleModalOk"}}>OK</button>-->
+{{#if toShowNext}}
+     <button type="button" class="btn btn-success" {{action "toggleModalNext"}}>Next Test</button>
+     <button type="button" class="btn btn-success" {{action "refresh"}}>Thank you</button>
+        {{/if}}
+    {{/modal-dialog}} 
+
+    {{/if}}
+    <!-- this code to show timer during test-->
+    {{#if showTimer}}
+    {{timer-component action="exitaction"}}
+      {{/if}}
+</div>
+<!--this code is for session logout-->
+<div class="logoutP">
+    <button type="button" class="btn btn-default btn-sm" {{action "log_out1"}}>
+        <span class="glyphicon glyphicon-log-out"></span>Logout</button>
+</div>
+ 

@@ -1,0 +1,56 @@
+<!--this is login form-->
+<div class="home-background">
+   <div class="home-box">
+      <div class="home-box-body">
+        <div class="text-color-title">
+         <h1 align="center"><b>Login</b></h1>
+         </div>
+         <br>
+         
+         <div class="col-sm-6-btm">
+            <div class="form-inline">
+               <br>
+               
+               <div class="text-box">
+               <div class="input-group">
+                  <div class="input-group-addon">
+                     <span class="glyphicon glyphicon-user"></span>
+                  </div>
+ 
+                  <div class ="error">
+                    {{validated-input type="text" id="emailInput" model=this valuePath='email' placeholder='Email Id'}}
+                 </div>
+                </div>
+               </div>
+               <br>
+               <br>
+               <div class="text-box">
+               <div class="input-group">
+                  <div class="input-group-addon">
+                     <span class="glyphicon glyphicon-lock"></span>
+                  </div>
+                  {{validated-input type="password" id="passwordInput" value="password" model=this valuePath='password' placeholder='Password'}}
+               </div>
+               </div>
+               <br>
+            </div>
+            {{errormessage}}
+            <div class="btngroup">
+                <!--this signin button to login  -->
+               <button type="button" id="SignInbutton"  class="btn btn-success" {{action 'login'}} disabled={{v-get this 'isInvalid' id="SignInbutton"}}> Sign In</button> 
+                <!--this signup button to move to register page -->
+               <button type="button" id="SignUpbutton" class="btn btn-success" {{action 'register'}}> Sign Up</button>
+               <!--<button type="button" id="SignInbutton" class="btn btn-success" {{action 'login'}}> Sign In</button>-->
+
+            </div>
+        </div>
+     </div>
+   </div>
+</div>
+
+
+ {{#if isShowingModal}} 
+    {{#modal-dialog targetAttachment="center" translucentOverlay=true}}
+        {{partial "loading-image"}}
+    {{/modal-dialog}}
+{{/if}}

@@ -1,0 +1,536 @@
+.navbar-nav {
+    padding-bottom: 10px;
+    padding-top: 29px;
+    
+}
+.container_card {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    -webkit-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+    border-radius: 4px;
+  }
+  #optioncss{
+    width: 54%;
+    margin-bottom: 10px;
+  }
+  #typecss{
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    background: #ffffff;
+    -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    cursor: pointer;
+  }
+  .card div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #47525d;
+  }
+
+.navbar-nav li {
+    padding-left: 20px;
+    padding-right: 17px;
+}
+.logo {
+    width: 50px;
+    background-image: url("images/Rapidqube Logo.jpg");
+    background-color:  rgb(72, 131, 175);
+    background-repeat: repeat-x;
+    position: absolute;
+    
+    height: 39px;
+}
+.btngroup {
+    padding-top: 10%;
+}
+.portalbackground {
+    background-color: #ccffff;
+    background-repeat: repeat;
+}
+.subcontainer {
+    height: 100vh;
+}
+.container {
+     
+    background-repeat: repeat;
+    width: 1500px;
+}
+.btn-reg {
+    position: relative;
+    left: 470px;
+    top: 70px;
+}
+.img-home {
+    position: relative;
+    top: 80px;
+}
+.btn-taketest {
+    padding: 6px 12px;
+    position: relative;
+    left: 10px;
+}
+.btn-checkscore {
+    background-color: dodgerblue;
+    display: inline-block;
+    padding: 6px 12px;
+}
+.register-box {
+    width: 50%;
+    height: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 10%;
+}
+.register-box-body {
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+     box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.2);
+}
+.home-box {
+    width: 50%;
+    height: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 15%;
+  
+}
+.home-box-body {
+    background:white; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: larger;
+      box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.2);
+}
+.home-box-body1 {
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: larger;
+      box-shadow: 10px 10px 5px rgba(5, 5, 5, 0.2);
+}
+.addQ-box {
+    width: 50%;
+    height: 100%;
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 15%;
+}
+.addQ-box-body {
+    background: rgba(5, 5, 5, 0.2)!important;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: larger;
+}
+.btn-calscore {
+    position: relative;
+    left: 470px;
+    color: white;
+  padding-bottom: 50px;
+}
+.form-group-test {
+    text-align: center;
+}
+.errmsg {
+    color: red;
+    position: absolute;
+    top: 30px;
+}
+.errmsgT {
+    color: red;
+
+     margin-right: 25px;
+    top: 175px;
+}
+.align-q {
+    position: relative;
+    text-align: left;
+    left: 80px;
+    background-repeat: repeat;
+}
+.test-head {
+    -webkit-text-fill-color:black;
+}
+.ember-modal-overlay {
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 50
+}
+.ember-modal-dialog {
+    z-index: 50;
+    position: fixed
+}
+.ember-modal-dialog.ember-modal-dialog-in-place {
+    position: relative
+}
+.ember-modal-dialog {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #222;
+    padding: 10px
+}
+.ember-modal-overlay.translucent {
+    background-color: rgba(128, 128, 128, .77)
+}
+.hljs-comment {
+    color: #999
+}
+.css .hljs-class,
+.css .hljs-id,
+.css .hljs-pseudo,
+.hljs-attribute,
+.hljs-regexp,
+.hljs-tag,
+.hljs-variable,
+.html .hljs-doctype,
+.ruby .hljs-constant,
+.xml .hljs-doctype,
+.xml .hljs-pi,
+.xml .hljs-tag .hljs-title {
+    color: #f2777a
+}
+.hljs-built_in,
+.hljs-constant,
+.hljs-literal,
+.hljs-number,
+.hljs-params,
+.hljs-pragma,
+.hljs-preprocessor {
+    color: #f99157
+}
+.css .hljs-rules .hljs-attribute,
+.ruby .hljs-class .hljs-title {
+    color: #fc6
+}
+.hljs-header,
+.hljs-inheritance,
+.hljs-string,
+.hljs-value,
+.ruby .hljs-symbol,
+.xml .hljs-cdata {
+    color: #9c9
+}
+.css .hljs-hexcolor,
+.hljs-title {
+    color: #6cc
+}
+.coffeescript .hljs-title,
+.hljs-function,
+.javascript .hljs-title,
+.perl .hljs-sub,
+.python .hljs-decorator,
+.python .hljs-title,
+.ruby .hljs-function .hljs-title,
+.ruby .hljs-title .hljs-keyword {
+    color: #69c
+}
+.hljs-keyword,
+.javascript .hljs-function {
+    color: #c9c
+}
+.hljs {
+    display: block;
+    overflow-x: auto;
+    background: #2d2d2d;
+    color: #ccc;
+    padding: .5em;
+    -webkit-text-size-adjust: none
+}
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .css,
+.xml .hljs-cdata,
+.xml .javascript,
+.xml .vbscript {
+    opacity: .5
+}
+body {
+    font-family: sans-serif;
+    font-size: 12px
+}
+.example {
+    padding: 10px;
+    background: #ddd;
+    border: 1px solid #666;
+    border-radius: 4px;
+    margin: 0 5px 5px 0;
+    min-height: 120px;
+    width: 500px;
+    max-width: 93%
+}
+#container-in-place {
+    min-height: 10px;
+    border: 2px dotted #0f0;
+    padding: 20px
+}
+button {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #0f9d58;
+    color: #fff;
+    cursor: pointer;
+}
+.targetContainer {
+    text-align: center
+}
+pre {
+    border: 1px solid #bbb;
+    border-radius: 4px
+}
+h1,
+h2 {
+    padding: 0 0 8px;
+    margin: 0
+}
+.my-cool-modal {
+    border-radius: 100px;
+    padding: 40px
+}
+.custom-styles-modal {
+    background-color: rgba(15, 157, 88, .77)
+}
+.custom-styles-modal-container {
+    background: #222;
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 300px
+}
+.custom-styles-modal-container h1 {
+    color: #0f9d58
+}
+.ember-modal-overlay-in-place {
+    height: initial;
+    opacity: initial;
+    position: initial
+}
+.ember-modal-dialog-in-place {
+    position: initial
+}
+body.centered-modal-showing {
+    overflow: hidden
+}
+.centered-scrolling-wrapper {
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow-y: scroll
+}
+.centered-scrolling-overlay {
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    justify-content: center;
+    -webkit-justify-content: center;
+    min-height: 100vh;
+    padding: 1em;
+    position: relative;
+    height: auto
+}
+.centered-scrolling-overlay.translucent {
+    background-color: rgba(0, 0, 0, .5);
+    opacity: 1
+}
+.centered-scrolling-container {
+    position: relative;
+    background-color: #fff;
+    min-width: 30em;
+    max-width: 650px;
+    min-height: 20em;
+    padding: 3em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 25px 4px rgba(0, 0, 0, .3)
+}
+.testlist {
+    position: relative;
+    top: -40px;
+    left: 38px;
+}
+.Qbackground {
+    position: relative;
+}
+.adj {
+    position: relative;
+    top: 20px;
+    left: -18px;
+    font-size: large;
+}
+.Que {
+    position: relative;
+    top: -20px;
+    left: 40px;
+}
+.Qinput-group {
+    position: relative;
+    top: -18px;
+    left: -41px;
+}
+.Qbtn-taketest {
+    position: relative;
+    top: -6px;
+    left: 38px;
+}
+.logoutT {
+    position: absolute;
+    padding-left: 880px;
+    -webkit-text-fill-color: black;
+    top: 3px;
+}
+.logoutP {
+    position: absolute;
+    padding-left: 880px;
+    top: 3px;
+    -webkit-text-fill-color: black;
+}
+.login {
+    padding-left: 890px;
+    position: absolute;
+    top: 3px;
+}
+.score {
+    -webkit-text-fill-color: #7FFF00;
+    text-align: center;
+    font-size: large;
+}
+.timer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    z-index: 3000000;
+    top: 50px;
+    right: 1px;
+    width: auto;
+    background-color: #7FFF00;
+    color: white;
+     border: 2px solid black;
+    border-radius: 5px;
+}
+.text-color {
+    -webkit-text-fill-color: black;
+}
+.go-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+.go-top:hover {
+    background-color: dodgerblue;
+}
+.Instructions {
+    -webkit-text-fill-color:black;
+    text-align: left;
+}
+.submitagreement {
+    text-align: center;
+    -webkit-text-fill-color: white;
+}
+.navbar-inverse {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+.navbar-inverse1 {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #99ff99;
+     box-shadow:  0 5px 5px  rgba(5, 5, 5, 0.2);
+}
+.text-box {
+    right: 15%;
+}
+.agreementNoClr {
+    color: black;
+}
+.text-color-title{
+  font-family: 'open sans',arial,sans-serif;
+    -webkit-text-fill-color:	dodgerblue;
+}
+.border{
+     border-width:3px;  
+    border-style:solid;
+    border-color: #3399ff;
+    padding-bottom: 10px;
+}
+   .padding{
+       padding-top: 50px;
+   } 
+     .padding1{
+     
+       padding-left:210px;
+       padding-right:210px;
+       border-color: white;
+       border-style:solid;
+       background-color: #ffffff;
+   } 
+   .padding2{
+      
+       padding-left:210px;
+       padding-right:210px;  
+       border-color: dodgerblue;
+       border-style:solid;
+       background-color: white;
+   } 
+    .padding3{
+       padding-top: 150px;
+       }
